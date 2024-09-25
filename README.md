@@ -1,2 +1,12 @@
 # getyoutube
-automate youtube data pulls via API
+This Python script is designed to automate the extraction and compilation of comprehensive YouTube channel data, enabling marketing teams and content creators to gain deep insights into their video performance and audience engagement. By leveraging the YouTube Data and YouTube Analytics APIs, the script systematically authenticates with a user’s YouTube account, retrieves all uploaded videos from a specified channel, and gathers detailed metrics for each video. These metrics include views, average view duration, likes, comments, and traffic source types, among others. The collected data is then organized into a structured Excel file using the pandas library, facilitating easy analysis, reporting, and visualization for strategic decision-making.
+
+![image](https://github.com/user-attachments/assets/3d4d6c8d-a553-4eee-b9ec-ed32c65bc203)
+
+
+Configuration management is handled through a dedicated configuration setup, which includes essential parameters such as the folder path for storing logs and data, API credentials, and date ranges for data retrieval. The script ensures secure and seamless authentication with YouTube by managing OAuth tokens, refreshing them as needed, and handling any authentication errors gracefully. Robust error handling and logging mechanisms are implemented to track the script’s operations and capture any issues that arise during execution. Logs are meticulously recorded in a designated log directory, providing transparency and aiding in troubleshooting, while the main data processing steps are clearly documented to ensure maintainability and ease of use.
+
+![image](https://github.com/user-attachments/assets/bef1d7de-637c-494f-bb43-68920333227e)
+
+
+A key feature of this script is its ability to capture granular details of video performance over time, which is essential for understanding the nuanced dynamics of audience behavior and content effectiveness. Unlike other API endpoints that may only provide aggregated subscriber counts or net changes, this script delves deeper by tracking individual video metrics on a daily basis and categorizing traffic sources. This level of detail allows users to identify specific trends, such as spikes in views from particular traffic sources or fluctuations in engagement metrics, enabling more informed and targeted marketing strategies. By maintaining a comprehensive and detailed record of each video’s performance, the script empowers users to make data-driven decisions that enhance their YouTube channel’s growth and engagement.
